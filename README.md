@@ -38,7 +38,6 @@
 
 ## Repository layout
 
-```text
 ap-bridge/
 ├─ fetcher/           # Sphere 1 – C++ Archipelago → state.json
 ├─ interpreter/       # Sphere 2 – Python Twitch bot
