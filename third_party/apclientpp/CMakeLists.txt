@@ -1,0 +1,27 @@
+cmake_minimum_required(VERSION 3.10)
+
+# NOTE: you currently need to add dependencies listed in the README.md to your target yourself.
+#       See test/ for a (somewhat incomplete) example.
+
+project("apclientpp" VERSION 0.6.3
+        DESCRIPTION "A header-only c++ library to connect to Archipelago."
+        HOMEPAGE_URL "https://github.com/black-sliver/apclientpp")
+
+include(GNUInstallDirs)
+
+option(APCLIENTPP_BUILD_TESTING "build and run apclientpp tests" ON)
+
+add_library(apclientpp INTERFACE
+        apclient.hpp
+        apuuid.hpp
+        defaultdatapackagestore.hpp)
+
+target_include_directories(
+        apclientpp
+        INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+        $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
+
+if (APCLIENTPP_BUILD_TESTING)
+    enable_testing()
+    add_subdirectory(test)
+endif()
