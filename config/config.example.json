@@ -1,0 +1,47 @@
+{
+  "archipelago": {
+    "host": "archipelago.server.example",
+    "port": 12345,
+    "slot_name": "YourSlotName",
+    "password": "optional-password-here",
+    "game": "Pokemon Emerald",
+    "total_locations_override": 295
+  },
+
+  "paths": {
+    "state_file": "data/state.json",
+    "fetcher_log": "logs/fetcher.log",
+    "bot_log": "logs/bot.log"
+  },
+
+  "fetcher": {
+    "state_flush_interval_sec": 2,
+    "max_messages_memory": 200
+  },
+
+  "bot": {
+    "twitch_channel": "thelovenityjade",
+    "prefix": "!",
+    "poll_interval_sec": 2
+  },
+
+  "twitch": {
+    "username": "twitchbot_username",
+    "oauth_token": "oauth:your_access_token_here",
+    "channel": "channel_name"
+  },
+
+  "bot_settings": {
+    "enable_timer_messages": true,
+    "timer_interval_seconds": 180,
+    "print_item_pickups": true,
+    "print_checks_command": true,
+    "print_seed_settings": true,
+    "print_seed_info": true,
+    "prefix": "!",
+    "admins": ["thelovenityjade"],
+    "allow_mods_as_admin": true,
+    "about_interval_minutes": 15,
+    "help_url": "https://github.com/lovenityjade/APTwitchBot/tree/main"
+  }
+}

@@ -1,0 +1,34 @@
+ Python
+__pycache__/
+*.pyc
+
+# Virtualenv
+venv/
+
+# C++ build
+build/
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Third-party build artefacts
+third_party/_deps/
+third_party/apclientpp_build/
+third_party/CMakeFiles/
+
+# Runtime data
+data/state.json
+data/ap_uuid.txt
+logs/
+interpreter.log
+fetcher.log
+ap_fetcher
+
+# Config sensible
+config/config.json
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+

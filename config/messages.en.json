@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "seedinfo": {
+      "description": "Message displayed by !seedinfo",
+      "placeholders": {
+        "%seed": "Seed ID (room.seed)",
+        "%game": "Game name (archipelago.game)",
+        "%server_version": "Archipelago server version (room.server_version)"
+      }
+    },
+    "progress": {
+      "description": "Progress summary used by !progress and auto item messages",
+      "placeholders": {
+        "%a": "Number of checked locations",
+        "%b": "Total number of locations (if known)",
+        "%c": "Percentage completed (0-100, formatted as string)",
+        "%d": "Number of remaining locations"
+      }
+    },
+    "lastitem_entry": {
+      "description": "Single line entry for !lastitem",
+      "placeholders": {
+        "%index": "Index of the item in the recent list (1..N)",
+        "%item_name": "Human-readable item name or fallback ID",
+        "%location_name": "Human-readable location name or fallback ID",
+        "%from_player": "Source player name (multiworld)",
+        "%to_player": "Target player name (usually the streamer)"
+      }
+    },
+    "about": {
+      "description": "Text for !about",
+      "placeholders": {
+        "%author": "Bot author name (e.g. LovenityJade)",
+        "%repo": "GitHub repository URL for the project",
+        "%help_url": "URL for help / docs, usually config.bot_settings.help_url"
+      }
+    }
+  },
+  "bot_connected": "Archipelago Interpreter connected. Use !help for commands.",
+  "seedinfo": "Seed: %seed – Game: %game – Archipelago %server_version",
+  "progress": "%a / %b checks (%c%) complétés – %d restants.",
+  "lastitem_header": "Last %count items:",
+  "lastitem_empty": "Aucun item reçu pour l'instant.",
+  "lastitem_entry": "%index) %item_name from %location_name",
+  "flags": "Items: %total total – %adv progression – %junk non-progression.",
+  "keyitems_header": "Key items trouvés: %list",
+  "keyitems_empty": "Aucun key item trouvé pour l’instant.",
+  "identity": "Slot: %slot_name (Player %player_number, Team %team_number) – Game: %game",
+  "team_solo": "Solo run – pas d’autres joueurs dans cette seed.",
+  "team_multi_header": "Team %team_number players: %list",
+  "admin_only": "Cette commande est réservée au streamer / modérateurs.",
+  "state_missing": "Interpreter: state.json introuvable ou illisible pour le moment.",
+  "aplog_tail_header": "Dernières %lines lignes de fetcher.log:",
+  "apraw_section": "Raw %section data: %json",
+  "help": "Commandes de base: !seedinfo, !rules, !progress, !lastitem, !flags, !keyitems, !identity, !team, !about. Pour plus de détails: %help_url",
+  "about": "AP Twitch Interpreter créé par %author – open source: %repo – tape !help pour la liste des commandes.",
+  "item_auto": "%player a obtenu %item_name (%location_name) – %a / %b checks (%c%) complétés – %d restants.",
+  "item_auto_key": "::clé:: ::etoile:: %player a obtenu %item_name (%location_name) – %a / %b checks (%c%) complétés – %d restants ::etoile:: ::clé::."
+}
