@@ -82,8 +82,8 @@ ap-bridge/
 
 Commands (bash):
 
-    git clone https://github.com/<your-account>/ap-bridge.git
-    cd ap-bridge
+     git clone https://github.com/lovenityjade/APTwitchBot.git
+     cd APTwitchBot
 
 ### 2. Configuration
 
